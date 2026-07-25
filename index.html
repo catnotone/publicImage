@@ -29,35 +29,8 @@
             overflow: hidden;
         }
 
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #fff;
-            padding: 28px 32px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 26px;
-            font-weight: 600;
-            margin-bottom: 6px;
-        }
-
-        header p {
-            font-size: 14px;
-            opacity: 0.9;
-        }
-
         .content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 32px;
             padding: 32px;
-            align-items: flex-start;
-        }
-
-        .image-section {
-            flex: 1 1 480px;
-            min-width: 0;
         }
 
         .image-wrapper {
@@ -76,48 +49,18 @@
             margin: 0 auto;
         }
 
-        .image-meta {
-            margin-top: 12px;
-            font-size: 13px;
-            color: #888;
-        }
-
-        .image-meta a {
-            color: #667eea;
-            text-decoration: none;
-            word-break: break-all;
-        }
-
-        .image-meta a:hover {
-            text-decoration: underline;
-        }
-
         @media (max-width: 768px) {
             .content {
                 padding: 20px;
-            }
-            header h1 {
-                font-size: 22px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Public Image</h1>
-            <p>public.jpg</p>
-        </header>
-
         <div class="content">
-            <div class="image-section">
-                <div class="image-wrapper">
-                    <img src="public.jpg" alt="public.jpg">
-                    <div class="image-meta">
-                        图片文件：<code>public.jpg</code><br>
-                        原图地址：<a href="public.jpg" target="_blank">查看原图</a>
-                    </div>
-                </div>
+            <div class="image-wrapper">
+                <img src="public.jpg" alt="public.jpg">
             </div>
         </div>
     </div>
