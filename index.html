@@ -92,77 +92,9 @@
             text-decoration: underline;
         }
 
-        .qr-section {
-            flex: 0 0 280px;
-            text-align: center;
-            background: #fafafa;
-            border-radius: 12px;
-            padding: 24px;
-            border: 1px solid #ececec;
-        }
-
-        .qr-section h2 {
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 14px;
-            color: #333;
-        }
-
-        .qr-code {
-            display: inline-block;
-            padding: 12px;
-            background: #fff;
-            border-radius: 8px;
-            border: 1px solid #e0e0e0;
-        }
-
-        .qr-code img {
-            display: block;
-            width: 220px;
-            height: 220px;
-        }
-
-        .qr-desc {
-            margin-top: 14px;
-            font-size: 12px;
-            color: #888;
-            line-height: 1.6;
-        }
-
-        .qr-url {
-            margin-top: 12px;
-            padding: 8px 10px;
-            background: #fff;
-            border: 1px dashed #ccc;
-            border-radius: 6px;
-            font-family: Consolas, Monaco, monospace;
-            font-size: 11px;
-            color: #555;
-            word-break: break-all;
-            user-select: all;
-        }
-
-        footer {
-            text-align: center;
-            padding: 18px;
-            background: #fafafa;
-            border-top: 1px solid #ececec;
-            font-size: 12px;
-            color: #999;
-        }
-
-        footer a {
-            color: #667eea;
-            text-decoration: none;
-        }
-
         @media (max-width: 768px) {
             .content {
-                flex-direction: column;
                 padding: 20px;
-            }
-            .qr-section {
-                flex: 1 1 auto;
             }
             header h1 {
                 font-size: 22px;
@@ -173,8 +105,8 @@
 <body>
     <div class="container">
         <header>
-            <h1>Public Image 展示页</h1>
-            <p>通过 Gitee Pages 访问 · 扫码即可在手机查看</p>
+            <h1>Public Image</h1>
+            <p>public.jpg</p>
         </header>
 
         <div class="content">
@@ -187,22 +119,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="qr-section">
-                <h2>本页二维码</h2>
-                <div class="qr-code">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=10&color=333333&bgcolor=ffffff&data=https%3A%2F%2Fzhuzhonga.gitee.io%2FpublicImage%2F" alt="本页二维码">
-                </div>
-                <div class="qr-desc">
-                    扫描二维码可在手机上访问本页面
-                </div>
-                <div class="qr-url" id="pageUrl">https://zhuzhonga.gitee.io/publicImage/</div>
-            </div>
         </div>
-
-        <footer>
-            托管于 <a href="https://gitee.com/zhuzhonga/publicImage" target="_blank">Gitee · zhuzhonga/publicImage</a>
-        </footer>
     </div>
 </body>
 </html>
